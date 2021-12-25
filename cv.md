@@ -1,2 +1,2 @@
 Dmitri Biazruckin
-City of born: Minsk
+#City of born: Minsk
