@@ -4,10 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico"> 
 </head>
 <body>
-    <h1>Hello</h1>
-    <h2>testing edit</h2>
+    <header class="header">
+    <div class="container">
+            <nav class="nav">
+               <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+               </ul>
+            </nav>
+    </div>
+</header> 
+
+<main class="main-content">
+ <div class="main-container">
+    <section class="profile-section" id="profile">
+        <img src="assets/img/cvphoto.jpeg" alt="" class="profile-photo">
+        <div class="section-list">
+            <h1 class="name-title">Dmitri Biazruchkin </h1>
+            <h3 class="name-subtitle">Junior Front-End Developer</h3>
+        </div>    
+    </section>   
+    <section class="section" id="contacts">
+            <h3 class="title">Contacts</h3>
+            <ul class="section-list">
+                <li>Email:<a href= "mailto:dimitrib.b2b@gmail.com" title="email">dimitrib.b2b@gmail.com</a></li>
+                <li>Github: <a href="https://github.com/RrTurer" title="Github">RrTurer</a></li>
+                <li>Discord: <a href="https://discord.com/" title="Discord">DimitriB#9460</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/dmitri-biazruchkin-023545212/" title="LinkedIn">Dmitri Biazruchkin</a></li>
+            </ul>
+    </section>
+
+    <section class="section" id="summary">
+            <h3 class="title">Summary</h3>
+            <p>
+                Hardware, software specialist with almost
+                20 years of experience.
+                Interested in the implementation and
+                automation of effective infrastructure
+                solutions for business.
+                Able to use new technologies and improve
+                skills.
+            </p> 
+    </section>
+    <section class="section" id="skills">
+            <h3 class="title">Skills</h3>
+            <ul class="section-list">
+                <li>HTML & CSS</li>
+                <li>JS</li>
+                <li>Git</li>
+                <li>Python</li>
+            </ul>
+    </section>
+    <section class="section" id="code">
+            <h3 class="title">Code example</h3>
+<pre class="code-text"><code>
+def descending_order(num):
+  return int("".join(map(str, 
+   (sorted(([int(x) for x in str(num)]), 
+     reverse = True)))))</code>
+            </pre>
+    </section>
+    <section class="section section-education" id="education">
+            <h3 class="title">Education</h3>
+            <ul class="section-list">
+                <li>Belarussian State Unuversity
+                 of Infomatics and
+                 Radioelectronics</li>
+                <li>RS PreSchool</li>
+            </ul>
+    </section>
+    <section class="section section-english" id="english">
+            <h3 class="title">English</h3>
+            <p>B1-Intermediate</p>
+    </section>
+   </div>         
+</main>
+
+            
+    <footer class="footer">
+        <div class="footer-content">
+            <div>&#169; 2022</div>
+            <a href="https://github.com/RrTurer" class="main-text" id="github">GitHub</a>
+            <a href="https://rs.school/js"><img src="assets/svg/rs.svg" alt="rs school logo" id="rs-logo"></a>
+        </div>
+    </footer>
+    
 </body>
 </html>
